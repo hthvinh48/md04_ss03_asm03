@@ -24,6 +24,4 @@ public class Customer {
 
     @Column(nullable = false)
     private String password;
-
-    private String address;
 }

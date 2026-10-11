@@ -1,4 +1,4 @@
-package com.example.customerservice.dto.req;
+package com.example.customerservice.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -11,17 +11,12 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class CustomerCreateRequest {
+public class LoginRequestDTO {
 
-    @NotBlank(message = "Full name is required")
-    private String fullName;
-
-    @NotBlank(message = "Email is required")
+    @NotBlank(message = "Email cannot be empty")
     @Email(message = "Invalid email format")
     private String email;
 
-    @NotBlank(message = "Password is required")
+    @NotBlank(message = "Password cannot be empty")
     private String password;
-
-    private String address;
 }

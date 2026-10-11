@@ -1,4 +1,4 @@
-package com.example.customerservice.dto.res;
+package com.example.customerservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,9 +9,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class CustomerResponse {
+public class CustomerResponseDTO {
     private Long id;
     private String fullName;
     private String email;
-    private String address;
 }
