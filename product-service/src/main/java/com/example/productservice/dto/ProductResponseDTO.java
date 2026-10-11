@@ -1,4 +1,4 @@
-package com.example.productservice.dto.res;
+package com.example.productservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,10 +11,9 @@ import java.math.BigDecimal;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ProductResponse {
+public class ProductResponseDTO {
     private Long id;
     private String name;
     private BigDecimal price;
     private Integer stockQuantity;
-    private String description;
 }
